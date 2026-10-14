@@ -1,0 +1,30 @@
+{
+  "name": "mcp-sentinel",
+  "version": "0.1.0",
+  "upstreams": [
+    {
+      "id": "fs_primary",
+      "name": "Primary Filesystem",
+      "transport": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "./demo-workspace"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "fs_secondary",
+      "name": "Secondary Filesystem",
+      "transport": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "./demo-workspace"
+      ],
+      "enabled": true
+    }
+  ]
+}
